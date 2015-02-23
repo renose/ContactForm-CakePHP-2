@@ -9,12 +9,12 @@
                 <?php
                 echo $this->Form->create('Contactform.Contactform', array(
                     'inputDefaults' => array(
-                        'error' => array('attributes' => array('wrap' => 'span', 'class' => 'help-inline')),
+                        'error' => array('attributes' => array('wrap' => 'span', 'class' => 'help-block'), 'div' => array('class' => 'has-error')),
                         'class' => 'form-control',
-                        'label' => false,
-                        'div' => false,
+                        'label' => 'control-label',
+                        'div' => array('class' => 'form-group'),
                     ),
-                    'class' => 'form-horizontal',
+                    'class' => 'form',
                     'role' => 'form'
                 ));
 

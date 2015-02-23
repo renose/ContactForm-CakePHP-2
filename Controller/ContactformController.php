@@ -14,7 +14,7 @@ App::uses('Sanitize', 'Utility');
 
 class ContactformController extends AppController {
 
-    public $helpers = array('Form');
+    public $helpers = array('Form' => array('className' => 'Bs3Helpers.Bs3Form'));
     public $components = array('Email', 'Auth', 'Session');
     public $uses = array('Contactform.Contactform');
 
